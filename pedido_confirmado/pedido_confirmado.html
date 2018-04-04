@@ -49,8 +49,7 @@
           <p style="font-size: 14px;color:#222;padding-left:10px">
             Parcelamento: [formapagamento.numeroParcelas]</p>
           <p style="font-size: 14px;color:#222;padding-left:10px">
-            Valor da parcela: [formapagamento.valorParcelas]</p>
-          <br />
+            Valor da parcela: [formapagamento.valorParcelas]</p>          
           [TAG:formapagamento.fim] [TAG:boleto.inicio] <a href="[boleto.url]">
             <img src="[configuracao.urlRecursos]i/email/imprimir_boleto.gif" alt="Imprimir Boleto"
               height="30" width="200" />
@@ -63,8 +62,7 @@
       </tr>
       <tr>
         <td style="padding: 0px 0px 20px;">
-          <p style="color:#222; font-size: 14px; padding-bottom: 5px;font-weight:900;padding:10px 0 0 10px">Endere&ccedil;o de Entrega</p>
-          <br />
+          <p style="color:#222; font-size: 14px; padding-bottom: 5px;font-weight:900;padding:10px 0 0 10px">Endere&ccedil;o de Entrega</p>          
           <p style="font-size: 14px;color:#222;padding:10px">
             Nome do Destinat&aacute;rio: [endereco.destinatario]</p>
           <p style="font-size: 14px;color:#222;padding:10px">
@@ -80,55 +78,40 @@
           </td>
         </tr>
         [TAG:produtos.inicio]
-        <tr style="text-align: center">
+        <tr style="text-align: right">
           <td>
-              [produto.nome]
+             Produto: [produto.nome]
           </td>        
         </tr>
-        <tr style="text-align: center">
+        <tr style="text-align: right">
           <td>
-              [produto.quantidade]
+            Qtde: [produto.quantidade]
           </td>
         </tr>
-        <tr style="text-align: center">
+        <tr style="text-align: right">
           <td>
-              [produto.precoUnitario]
+            Preço unitário: [produto.precoUnitario]
           </td>
         </tr>
-        <tr style="text-align: center">
+        <tr style="text-align: right">
             <td>
-              [produto.precoTotal]
+              Preço total: [produto.precoTotal]
             </td>
         </tr>
         [TAG:produtos.fim]
         <tr style="text-align:right">
           <td>
-              [pedido.valorSubTotal]
+             Valor subtotal: [pedido.valorSubTotal]
           </td>
-        </tr>
+        </tr>          
         <tr style="text-align:right">
             <td>
-                [pedido.valorSubTotal]
+                Frete: [pedido.valorFrete]
             </td>        
-        </tr>
+        </tr>        
         <tr style="text-align:right">
             <td>
-                [pedido.valorServico]
-            </td>        
-        </tr>
-        <tr style="text-align:right">
-            <td>
-                [pedido.valorFrete]
-            </td>        
-        </tr>
-        <tr style="text-align:right">
-            <td>
-                [pedido.entrega.textoIndicativo]
-            </td>        
-        </tr>
-        <tr style="text-align:right">
-            <td>
-                [pedido.valorTotal]
+                Valor total: [pedido.valorTotal]
             </td>        
         </tr>             
       <tr>
